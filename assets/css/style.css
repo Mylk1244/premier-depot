@@ -249,3 +249,36 @@
         font-style: italic;
 }
 /* end of Profile */*
+
+/* footer */
+    footer {
+        padding: 30px 0;
+        background-color: var(--primary-color);
+        border-top: 1px solid #eee;
+        text-align: center;
+}
+    footer p {
+        color: var(--bg-page);
+        font-size: 0.85rem;
+}
+    footer time {
+        font-weight: bold;
+        color: var(--bg-page);
+}
+    .social-networks ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        gap: 30px;
+        margin-bottom: 15px;
+}
+    .social-networks li {
+        width: 30px;
+        height: 30px;
+}
+    .social-networks i{
+        font-size: 30px;
+        color: var(--bg-page);
+    }
+/* end of footer */
