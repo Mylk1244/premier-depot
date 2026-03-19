@@ -18,11 +18,12 @@
 
     /* Fonts */
     body {
-        font-family: 'Raleway', sans-serif; /* Contenu en Raleway */
+        font-family: 'Raleway', sans-serif;
+        background-color: rgba(51, 51, 51, 0.2);
 }
 
     h1, h2, h3 {
-        font-family: 'Lato', sans-serif; /* Titres en Lato */
+        font-family: 'Lato', sans-serif;
 }
 
 /* end of Fonts */
@@ -101,6 +102,14 @@
         text-align: center;
         font-size: 1.1rem;
 }
+    .contact-list a {
+        text-decoration: none;
+        color: var(--bg-page);
+    }
+    .contact-list a:hover {
+        text-decoration: none;
+        color: var(--text-dark);
+    }
     address {
         font-style: normal;
     }
@@ -208,6 +217,7 @@
     .professional-profile {
         flex: 1;
         padding: 30px;
+        background-color: var(--bg-page);
 }
     .professional-profile h3 {
         font-size: 1.4rem;
@@ -220,7 +230,7 @@
 }
     .profile p {
         text-align: justify;
-        text-indent: 30px; /* Alinéa sur la première ligne */
+        text-indent: 30px;
         margin-bottom: 15px;
         line-height: 1.6;
 }
@@ -232,6 +242,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        white-space: nowrap;
 }
     .professional-profile .title {
         font-weight: bold;
@@ -282,3 +293,41 @@
         color: var(--bg-page);
     }
 /* end of footer */
+
+    /* Dynamic */
+
+    /* hover */
+    .professional-profile li{
+        border-left: 5px solid transparent; 
+        background-color: transparent;
+        transition: 0.3s;
+        padding: 10px;
+}
+    .professional-profile li:hover {
+        background-color: #f2f2f2;
+        border-left: 5px solid #24A4AD;
+}
+    /* end of Hover */
+    /* Zoom */
+    .profile-figure {
+        width: 150px;
+        height: 150px;
+        border: 2px solid #24A4AD;
+}
+    .profile-figure img {
+        cursor: zoom-in;
+        display: block;
+}
+    /* end of Zoom */
+
+    /* Opacity */
+    .social-networks i {
+        opacity: 1;
+        transition: opacity 0.3s ease;
+}
+    .social-networks a:hover i {
+    opacity: 0.7;
+}
+
+/* end of opacity */
+/* end of Dynamic */
