@@ -92,7 +92,7 @@
     .contact-list li {
         width: 110px;
         align-items: center;
-        gap: 14;
+        gap: 14px;
         text-align: left;
         font-size: 0.9rem;
         font-weight: 300;
