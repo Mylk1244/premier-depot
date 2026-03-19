@@ -17,12 +17,12 @@
 /* end of page*/
 
     /* Fonts */
-body {
-    font-family: 'Raleway', sans-serif; /* Contenu en Raleway */
+    body {
+        font-family: 'Raleway', sans-serif; /* Contenu en Raleway */
 }
 
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif; /* Titres en Lato */
+    h1, h2, h3 {
+        font-family: 'Lato', sans-serif; /* Titres en Lato */
 }
 
 /* end of Fonts */
@@ -30,103 +30,173 @@ h1, h2, h3 {
     /* Container */
 
 #container {
-    width: 1160px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+        width: 1160px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
 }
 /* end of Container */
 
+    /* header */
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 30px 0;
+        width: 100%;
+    }
+    .header-content {
+        display: flex;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 20px;
+}
+    .header-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
+    .header-text h1 {
+        font-size: 3.2rem;
+        font-weight: bold;
+        margin-bottom: 0;
+}   
+    .header-text h2 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-top: 0;
+}
+
+    .profile-figure img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 5px solid white;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+    .contact-list {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 25px auto 0 auto;
+        max-width: 350px;
+        gap: 15px 50px;
+}
+    .contact-list li {
+        width: 110px;
+        align-items: center;
+        gap: 14;
+        text-align: left;
+        font-size: 0.9rem;
+        font-weight: 300;
+}
+    .contact-list i {
+        width: 20px;
+        text-align: center;
+        font-size: 1.1rem;
+}
+    address {
+        font-style: normal;
+    }
+
+/* end of header     */
+
     /* main */
-main {
-    display: flex;
+    main {
+        display: flex;
 }
 /* end of main */
 
 /* Supplements */
-.Supplements {
-    flex: 0 0 350px;
-    background-color: var(--bg-sidebar);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+    .Supplements {
+        flex: 0 0 350px;
+        background-color: var(--bg-sidebar);
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
 }
 
-.Supplements h3 {
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    margin-top: 25px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
+    .Supplements h3 {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 5px;
 }
-.Supplements ul {
-    list-style: none; /* On enlève les puces par défaut */
-    margin-bottom: 20px;
-}
-
-.skills ul li, 
-.languages ul li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    font-weight: bold;
+    .Supplements ul {
+        list-style: none;
+        margin-bottom: 20px;
 }
 
-.quality ul li, 
-.interest ul li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    font-weight: 400;
+    .skills ul li, 
+    .languages ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+     font-weight: bold;
 }
 
-.language-name {
-    font-weight: bold;
+    .quality ul li, 
+    .interest ul li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        font-weight: 400;
+}   
+
+    .language-name {
+        font-weight: bold;
 }
 
-.language-level {
-    font-weight: 400;
+    .language-level {
+        font-weight: 400;
 }
     /* skill */
 
-.skills li span::before {
-    content: "★ ★ ★ ★ ★";
-    letter-spacing: 5px;
+    .skills li span::before {
+        content: "★ ★ ★ ★ ★";
+            letter-spacing: 5px;
 }
 
-.skills li span[data-level="4"]::before {
-    background: linear-gradient(to right, var(--primary-color) 80%, #ccc 80%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .skills li span[data-level="4"]::before {
+        background: linear-gradient(to right, var(--primary-color) 80%, #ccc 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
-.skills li span[data-level="2"]::before {
-    background: linear-gradient(to right, var(--primary-color) 40%, #ccc 40%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .skills li span[data-level="2"]::before {
+        background: linear-gradient(to right, var(--primary-color) 40%, #ccc 40%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 
-.skills li span[data-level="1"]::before {
-    background: linear-gradient(to right, var(--primary-color) 20%, #ccc 20%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    .skills li span[data-level="1"]::before {
+        background: linear-gradient(to right, var(--primary-color) 20%, #ccc 20%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }
 /* end of Skill */
 
     /* Quality */
 
-.quality li::before, .interest li::before {
-    content: "■";
-    color: var(--primary-color);
-    font-size: 0.8rem;
-    display: inline-block;
+    .quality li::before, 
+    .interest li::before {
+        content: "■";
+        color: var(--primary-color);
+        font-size: 0.8rem;
+        display: inline-block;
 }
 
     /* end of Quality */
@@ -135,47 +205,47 @@ main {
 
     /* Profile */
 
-.professional-profile {
-    flex: 1;
-    padding: 30px;
+    .professional-profile {
+        flex: 1;
+        padding: 30px;
 }
-.professional-profile h3 {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 20px;
-    margin-top: 30px;
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 5px;
-    display: block;
+    .professional-profile h3 {
+        font-size: 1.4rem;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        margin-top: 30px;
+        border-bottom: 2px solid var(--primary-color);
+        padding-bottom: 5px;
+        display: block;
 }
-.profile p {
-    text-align: justify;
-    text-indent: 30px; /* Alinéa sur la première ligne */
-    margin-bottom: 15px;
-    line-height: 1.6;
+    .profile p {
+        text-align: justify;
+        text-indent: 30px; /* Alinéa sur la première ligne */
+        margin-bottom: 15px;
+        line-height: 1.6;
 }
-.professional-profile ul {
-    list-style: none;
+    .professional-profile ul {
+        list-style: none;
 }
-.professional-profile li {
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    .professional-profile li {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 }
-.professional-profile .title {
-    font-weight: bold;
-    color: var(--text-dark);
-    flex-basis: 40%;
+    .professional-profile .title {
+        font-weight: bold;
+        color: var(--text-dark);
+        flex-basis: 40%;
 }
-.professional-profile .date {
-    font-style: italic;
-    color: var(--primary-color);
-    text-align: right;
+    .professional-profile .date {
+        font-style: italic;
+        color: var(--primary-color);
+        text-align: right;
 }
-.professional-profile .location {
-    flex-basis: 100%;
-    font-size: 0.9rem;
-    font-style: italic;
+    .professional-profile .location {
+        flex-basis: 100%;
+        font-size: 0.9rem;
+        font-style: italic;
 }
 /* end of Profile */*
