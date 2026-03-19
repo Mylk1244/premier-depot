@@ -198,7 +198,7 @@
 }
 /* end of Skill */
 
-    /* Quality */
+    Quality
 
     .quality li::before, 
     .interest li::before {
@@ -291,7 +291,7 @@
     .social-networks i{
         font-size: 30px;
         color: var(--bg-page);
-    }
+}
 /* end of footer */
 
     /* Dynamic */
@@ -312,7 +312,6 @@
     .profile-figure {
         width: 150px;
         height: 150px;
-        border: 2px solid #24A4AD;
 }
     .profile-figure img {
         cursor: zoom-in;
