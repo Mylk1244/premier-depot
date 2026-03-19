@@ -1,0 +1,13 @@
+@import url(./fonts.css);
+
+/* Général */
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px; /* Ou la taille de ton choix */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+/* End of general */
